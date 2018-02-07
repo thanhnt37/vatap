@@ -21,7 +21,7 @@ class CreateFilesTable extends Migration
 
             $table->boolean('is_local')->default(false);
 
-            $table->unsignedInteger('file_category_type')->default(0);
+            $table->string('file_category_type')->default('');
 
             $table->string('s3_key')->default('');
             $table->string('s3_bucket')->default('');
