@@ -16,7 +16,7 @@ class CreatebatchesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name')->comment('ten lo tem');
             $table->unsignedInteger('quantity');
-            $table->unsignedInteger('product_id')->nullable()->comment('id san pham');
+//            $table->unsignedInteger('product_id')->nullable()->comment('id san pham');
 //            $table->unsignedInteger('guarantee_days')->default(0);
             $table->unsignedInteger('organization_id')->comment('id cong ty');
             $table->unsignedTinyInteger('generate_code_status')->default(0);

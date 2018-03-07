@@ -16,6 +16,9 @@ class CreateAdminUsersTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('password', 60);
+            $table->smallInteger('gender')->default(1);     // 1 = Male, 0 = Female
+            $table->string('telephone')->nullable()->default('');
+            $table->date('birthday')->nullable()->default(null);
 
             $table->string('locale')->default('');
 

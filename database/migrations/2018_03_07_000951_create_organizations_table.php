@@ -24,6 +24,7 @@ class CreateorganizationsTable extends Migration
             $table->longText('description')->nullable();
             $table->unsignedInteger('country_id')->nullable()->comment('thuoc nuoc nao');
             $table->unsignedInteger('admin_user_id');
+            $table->longText('note')->nullable();
             // Add some more columns
 
             $table->timestamps();
